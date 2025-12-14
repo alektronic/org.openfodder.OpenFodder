@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.llvm21
 build-options:
-  append-path: /usr/lib/sdk/llvm12/bin
+  append-path: /usr/lib/sdk/llvm21/bin
   prepend-ld-library-path: /usr/lib/sdk/llvm21/lib
 command: openfodder
 finish-args:
@@ -21,7 +21,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/OpenFodder/openfodder.git
-        tag: 1.9.2
         commit: 162a68f9ce927ccb90ad336372c52d909dbdece4
         x-checker-data:
           type: git
