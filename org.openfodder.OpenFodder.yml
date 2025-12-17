@@ -42,7 +42,6 @@ modules:
       - install -Dm644 org.openfodder.OpenFodder.appdata.xml -t ${FLATPAK_DEST}/share/metainfo/
       - install -Dm644 org.openfodder.OpenFodder.desktop -t ${FLATPAK_DEST}/share/applications/
       - install -Dm644 org.openfodder.OpenFodder.png -t ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/
-  # The below doesn't seem to be used anywhere, so the data zip is never downloaded or extracted - it is compiled into the sandbox at build time above - but leaving just in case
   - name: data
     buildsystem: simple
     build-commands:
